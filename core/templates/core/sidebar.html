@@ -1,0 +1,16 @@
+{% load static %}
+
+<div class="border-end border-warning h-100">
+    <div class="text-center">
+        <img src="{%static "core/images/pic1.jpg" %}" alt="Profile Picture" class="img-fluid rounded-circle mt-4" width ="100px" height="100px">
+        <h4 class="text-light mt-2 st-font">Chandrapal Singh</h4>
+    </div>
+
+    <hr class="border border-light text-light">
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link Mynav-link {{home}}">Home</a>
+        <a href="{% url 'services' %}" class="nav-link Mynav-link {{services}}">Serives</a>
+        <a href="{% url 'skill' %}" class="nav-link Mynav-link {{skill}}">Skills</a>
+        <a href="{% url 'contact' %}" class="nav-link Mynav-link {{contact}}">Contact</a>
+    </nav>
+</div>
